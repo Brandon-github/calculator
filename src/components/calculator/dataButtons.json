@@ -1,0 +1,88 @@
+[
+    {
+        "id": 1,
+        "title": "C",
+        "dataType": "clear"
+    },
+    {
+        "id": 2,
+        "title": "/",
+        "dataType": "operator"
+    },
+    {
+        "id": 3,
+        "title": "*",
+        "dataType": "operator"
+    },
+    {
+        "id": 4,
+        "title": "-",
+        "dataType": "operator"
+    },
+    {
+        "id": 5,
+        "title": "7",
+        "dataType": "number"
+    },
+    {
+        "id": 6,
+        "title": "8",
+        "dataType": "number"
+    },
+    {
+        "id": 7,
+        "title": "9",
+        "dataType": "number"
+    },
+    {
+        "id": 8,
+        "title": "+",
+        "dataType": "operator"
+    },
+    {
+        "id": 9,
+        "title": "4",
+        "dataType": "number"
+    },
+    {
+        "id": 10,
+        "title": "5",
+        "dataType": "number"
+    },
+    {
+        "id": 11,
+        "title": "6",
+        "dataType": "number"
+    },
+    {
+        "id": 12,
+        "title": "1",
+        "dataType": "number"
+    },
+    {
+        "id": 13,
+        "title": "2",
+        "dataType": "number"
+    },
+    {
+        "id": 14,
+        "title": "3",
+        "dataType": "number"
+    },
+    {
+        "id": 15,
+        "title": "=",
+        "dataType": "result"
+    },
+    {
+        "id": 16,
+        "title": "0",
+        "dataType": "number"
+    },
+    {
+        "id": 17,
+        "title": ".",
+        "dataType": "point"
+    }
+    
+]
