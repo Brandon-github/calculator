@@ -1,0 +1,118 @@
+:root {
+  --bg-color: #222;
+  --text-color: #fff;
+  --bg-button-primary: #333;
+  --bg-button-primary-hover: rgb(40, 40, 40);
+  --bg-button: #0055ff;
+  --bg-button-hover: rgb(0, 61, 204);
+  --bg-button-action: #e2b605;
+  --bg-button-primary-action: #01d448;
+}
+
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 370px;
+  height: fit-content;
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.calculator__form {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.calculator__input {
+  width: inherit;
+  height: inherit;
+  outline: none;
+  text-align: right;
+  padding: 0 25px;
+  pointer-events: none;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 1.5em;
+}
+
+.calculator__buttons {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.calculator__button {
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border-style: none;
+  border-radius: 10px;
+  background-color: var(--bg-button-primary);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.calculator__button:hover {
+  background-color: var(--bg-button-primary-hover);
+}
+
+.calculator__button:active {
+  background-color: var(--bg-button-action);
+  filter: drop-shadow(0 0 20px var(--bg-button-action));
+}
+
+.calculator__button[data-type="operator"],
+.calculator__button[data-type="clear"],
+.calculator__button[data-type="result"] {
+  background-color: var(--bg-button);
+}
+
+.calculator__button[data-type="operator"]:hover,
+.calculator__button[data-type="clear"]:hover,
+.calculator__button[data-type="result"]:hover {
+  background-color: var(--bg-button-hover);
+}
+
+.calculator__button[data-type="operator"]:active,
+.calculator__button[data-type="clear"]:active,
+.calculator__button[data-type="result"]:active {
+  filter: drop-shadow(0 0 30px var(--bg-button-primary-action));
+  background-color: var(--bg-button-primary-action);
+}
+
+.calculator__button:nth-child(8) {
+  grid-row: span 2;
+}
+
+.calculator__button:nth-child(15) {
+  grid-row: span 2;
+}
+
+.calculator__button:nth-child(16) {
+  grid-column: span 2;
+}
